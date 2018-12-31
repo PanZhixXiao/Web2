@@ -76,9 +76,10 @@ ul,li{
 	float: left;
 }
 .left{
-	width: 200px;
+	width: 180px;
 	height: 40px;
 	float: left;
+	text-align: center;
 	background-color: #ff4d04;
 }
 .pp{
@@ -90,9 +91,6 @@ ul,li{
 .fenlei a{
 	text-decoration: none;
 	color: black;
-}
-.left{
-	text-align: center;
 }
 .bottom{
 	height: 980px;
@@ -110,12 +108,12 @@ ul,li{
 	float: left;
 }
 .zuoall{
-	width: 200px;
+	width: 180px;
 	height: 550px;
 	float: left;
 }
 .zuo{
-	width: 200px;
+	width: 180px;
 	height: 430px;
 	border-bottom: 1px solid #ff4d4b;
 	float: left;
@@ -131,9 +129,10 @@ ul,li{
 	color: #ff4d4b;
 }
 .shangpin{
-	font-size: 13px;
+	font-size: 11px;
 	color: black;
 	text-decoration: none;
+	font-weight: bold;
 	padding: 7px;
 }
 .lunbotu1{
@@ -143,24 +142,24 @@ ul,li{
 	border: 1px solid #ff4d4b;
 }
 .lunbotu2{
-	width: 165px;
+	width: 185px;
 	height: 365px;
 	border: 1px solid #ff4d4b;
 	float: left;
 }
 .kuaixun{
-	width: 165px;
+	width: 185px;
 	height: 50px;
 	float: left;
 	border-bottom: 1px solid #f8f7f6;
 }
 .center1{
-	width: 165px;
+	width: 185px;
 	height: 315px;
 	float: left;
 }
 .huafei{
-	width: 165px;
+	width: 185px;
 	height: 183px;
 	border-top: 1px solid #f8f7f6;
 	float: left;
@@ -173,9 +172,12 @@ ul,li{
 	margin-left: 10px;
 }
 .xiaokuang{
-	width: 200px;
+	width: 170px;
 	height: 99px;
 	float: left;
+}
+.xiaokuang p{
+	font-size: 14px;
 }
 .ff button{
 	width: 150px;
@@ -191,7 +193,7 @@ ul,li{
 	height: 233px;
 	float: left;
 	margin-top: 315px;
-	margin-left: -975px;
+	margin-left: -995px;
 }
 .bottom1{
 	width: 1180px;
@@ -467,6 +469,7 @@ ul,li{
 	left: 488px;
 	position: absolute;
 	z-index: 999;
+	overflow: hidden;
 }
 .rightx{
 	width: 180px;
