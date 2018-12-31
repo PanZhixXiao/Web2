@@ -50,25 +50,25 @@
 			</div>
 			<div class="xihu">
 
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: red">洗发护发</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: red">洗发护发</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
 				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: red">日本纸尿裤</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">身体乳</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">身体乳</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">内衣文胸</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">内衣文胸</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #c0a9d3">iPone 6s</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #c0a9d3">iPone 6s</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #c0a9d3">iPad Air2</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #c0a9d3">iPad Air2</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">牛仔裤</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">牛仔裤</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">奶粉</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">奶粉</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">防晒霜</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">防晒霜</a></p>
 				<p style="float: left;margin-right: 8px"><img src="img/shuxian.jpg" alt=""></p>
-				<p><a href="" style="float: left;font-size: 13px;text-decoration: none;margin-right: 8px;color: #666560">伞</a></p>
+				<p><a href="" style="float: left;font-size: 13px;font-weight: bold;text-decoration: none;margin-right: 8px;color: #666560">伞</a></p>
 			</div>
 			<div class="fenlei">
 				<div class="left">
@@ -430,6 +430,19 @@
 		x5.onmouseout = function(){
 			x5.style.marginRight = "-80px";
 		}
+		window.onload = function(){
+		var cover = document.getElementsByClassName('top')[0];
+		window.onscroll = function(){
+			var st = document.documentElement.scrollTop || document.body.scrollTop;
+			if(st>250){
+				cover.style.position = 'fixed';
+				cover.style.zIndex = 10000;
+				cover.style.marginLeft = "42px";
+			}else{
+				cover.style.position = 'static';
+			}
+		}
+}
 	</script>
 </body>
 </html>
