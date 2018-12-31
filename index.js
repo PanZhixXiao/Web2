@@ -2,7 +2,7 @@ window.onload = function(){
 	var cover = document.getElementsByClassName('top')[0];
 	window.onscroll = function(){
 		var st = document.documentElement.scrollTop || document.body.scrollTop;
-		if(st>150){
+		if(st>250){
 			cover.style.position = 'fixed';
 			cover.style.zIndex = 10000;
 			cover.style.marginLeft = "42px";

@@ -530,7 +530,8 @@ ul,li{
 	width: 50px;
 	height: 26px;
 	float: left;
-	border: 2px solid #aca7a2;
+	border: 1px solid #aca7a2;
+	border-bottom: 5px solid  #aca7a2;
 	text-align: center;
 	line-height: 28px;
 }
