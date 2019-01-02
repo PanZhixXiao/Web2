@@ -5,7 +5,7 @@ window.onload = function(){
 		if(st>250){
 			cover.style.position = 'fixed';
 			cover.style.zIndex = 10000;
-			cover.style.marginLeft = "42px";
+			cover.style.marginLeft = "82px";
 		}else{
 			cover.style.position = 'static';
 		}
