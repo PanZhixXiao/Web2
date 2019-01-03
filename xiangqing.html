@@ -297,6 +297,12 @@
 		var imgz = document.createElement("img");
 		imgz.src = "img/duigou.png";
 		var wupin = document.getElementById("wupin");
+		hanliang.style.border = "1px solid #ff0f19";
+		hanliang.appendChild(imgp);
+		imgp.style.display = "block";
+		hanliang1.style.border = "none";
+		imgz.style.display = "none";
+		wupin.innerHTML = "150ml";
 		hanliang.onmouseover = function(){
 			hanliang.style.cursor = "default";
 		}
@@ -331,7 +337,7 @@
 		var tu = document.getElementById("tu");
   		var slider = document.getElementById("slider");
   		var img2 = document.getElementById("img2");
-  		onload = function(){
+  		window.onload = function(){
 			var imgx1 = document.createElement("img");
   			imgx1.src = "img/pp0.jpeg"
   			imgx1.id = "Bimg";
@@ -479,7 +485,7 @@
 		all.style.width = window.outerWidth + "px";
 		
 		two.onclick = function(){
-			tankuang.style.width =  window.outerWidth + "px";
+			tankuang.style.width =  document.documentElement.clientWidth + "px";
 			tankuang.style.height = document.body.offsetHeight + "px";
 			tankuang.style.display = "block";
 			var tishi = document.getElementById("tishi");
